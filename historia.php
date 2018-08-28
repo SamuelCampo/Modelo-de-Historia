@@ -76,17 +76,17 @@ class Historia extends CI_Model {
     );
     $this->arr_vaccunas = array(
       (object)array('codigo'=>'BCG','vacuna'=>'BCG'),
-      (object)array('codigo'=>'DPT','vacuna'=>'DPT MENORES DE 5 AÑOS'),
-      (object)array('codigo'=>'FAMARILLAN','vacuna'=>'FIEBRE AMARILLA NIÑOS DE 1 AÑO'),
+      (object)array('codigo'=>'DPT','vacuna'=>'DPT MENORES DE 5 AÃ‘OS'),
+      (object)array('codigo'=>'FAMARILLAN','vacuna'=>'FIEBRE AMARILLA NIÃ‘OS DE 1 AÃ‘O'),
       (object)array('codigo'=>'HEPATITA','vacuna'=>'HEPATITIS A '),
-      (object)array('codigo'=>'HEPATITB','vacuna'=>'HEPATITIS B MENORES DE 1 AÑO'),
-      (object)array('codigo'=>'INFLUEZN','vacuna'=>'INFLUENZA NIÑOS'),
+      (object)array('codigo'=>'HEPATITB','vacuna'=>'HEPATITIS B MENORES DE 1 AÃ‘O'),
+      (object)array('codigo'=>'INFLUEZN','vacuna'=>'INFLUENZA NIÃ‘OS'),
       (object)array('codigo'=>'NEUMOCOCO','vacuna'=>'NEUMOCOCO'),
       (object)array('codigo'=>'PENTAVALENTE','vacuna'=>'PENTAVALENTE'),
       (object)array('codigo'=>'POLIO','vacuna'=>'POLIO'),
       (object)array('codigo'=>'ROTAVIRUS','vacuna'=>'ROTAVIRUS'),
-      (object)array('codigo'=>'TDTT','vacuna'=>'TD O TT MUJERES EN EDAD FÉRTIL 15 A 49 AÑOS'),
-      (object)array('codigo'=>'TRIPVIRAL','vacuna'=>'TRIPLE VIRAL NIÑOS'),
+      (object)array('codigo'=>'TDTT','vacuna'=>'TD O TT MUJERES EN EDAD FÃ‰RTIL 15 A 49 AÃ‘OS'),
+      (object)array('codigo'=>'TRIPVIRAL','vacuna'=>'TRIPLE VIRAL NIÃ‘OS'),
       (object)array('codigo'=>'VPH','vacuna'=>'VIRUS DEL PAPILOMA HUMANO (VPH)'),
       (object)array('codigo'=>'ESQAD','vacuna'=>'ESQUEMA ADECUADO PARA LA EDAD')
     );
@@ -97,9 +97,9 @@ class Historia extends CI_Model {
       (object)array('codigo'=>'3','valor'=>'TERCERA DOSIS'),
       (object)array('codigo'=>'4','valor'=>'CUATRO DOSIS'),
       (object)array('codigo'=>'5','valor'=>'CINCO DOSIS'),
-      (object)array('codigo'=>'16','valor'=>'NO SE ADMINISTRA POR UNA TRADICIÓN'),
-      (object)array('codigo'=>'17','valor'=>'NO SE ADMINISTRA POR UNA CONDICIÓN DE SALUD'),
-      (object)array('codigo'=>'18','valor'=>'NO SE ADMINISTRA POR NEGACIÓN DEL USUARIO'),
+      (object)array('codigo'=>'16','valor'=>'NO SE ADMINISTRA POR UNA TRADICIÃ“N'),
+      (object)array('codigo'=>'17','valor'=>'NO SE ADMINISTRA POR UNA CONDICIÃ“N DE SALUD'),
+      (object)array('codigo'=>'18','valor'=>'NO SE ADMINISTRA POR NEGACIÃ“N DEL USUARIO'),
       (object)array('codigo'=>'19','valor'=>'NO SE ADMINISTRA POR TENER DATOS DE CONTACTO DEL USUARIO NO ACTUALIZADOS'),
       (object)array('codigo'=>'20','valor'=>'NO SE ADMINISTRA POR OTRAS RAZONES'),
       (object)array('codigo'=>'22','valor'=>'SIN DATO')
@@ -113,20 +113,20 @@ class Historia extends CI_Model {
       (object)array("estado"=>"EJECUTADO")
     );
     $this->arr_tipoejecplan = array(
-      (object)array("tipo"=>"ENFERMERÍA"),
-      (object)array("tipo"=>"TERAPIA FÍSICA"),
+      (object)array("tipo"=>"ENFERMERÃA"),
+      (object)array("tipo"=>"TERAPIA FÃSICA"),
       (object)array("tipo"=>"TERAPIA RESPIRATORIA")
     );
     $this->arr_causaext = array(
       (object)array("causaext"=>"ACCIDENTE DE TRABAJO"),
       (object)array("causaext"=>"ACCIDENTE DE TRANSITO"),
-      (object)array("causaext"=>"ACCIDENTE RÁBICO"),
-      (object)array("causaext"=>"ACCIDENTE OFÍRICO"),
+      (object)array("causaext"=>"ACCIDENTE RÃBICO"),
+      (object)array("causaext"=>"ACCIDENTE OFÃRICO"),
       (object)array("causaext"=>"OTRO TIPO DE ACCIDENTE"),
-      (object)array("causaext"=>"EVENTO CATASTRÓFICO"),
-      (object)array("causaext"=>"LESIÓN POR AGRESIÓN"),
-      (object)array("causaext"=>"LESIÓN AUTOINFRENGIDA"),
-      (object)array("causaext"=>"SOSPECHA DE MALTRATO FÍSICO"),
+      (object)array("causaext"=>"EVENTO CATASTRÃ“FICO"),
+      (object)array("causaext"=>"LESIÃ“N POR AGRESIÃ“N"),
+      (object)array("causaext"=>"LESIÃ“N AUTOINFRENGIDA"),
+      (object)array("causaext"=>"SOSPECHA DE MALTRATO FÃSICO"),
       (object)array("causaext"=>"SOSPECHA DE ABUSO SEXUAL"),
       (object)array("causaext"=>"SOSPECHA DE VIOLENCIA SEXUAL"),
       (object)array("causaext"=>"SOSPECHA DE MALTRATO EMOSIONAL"),
@@ -139,8 +139,8 @@ class Historia extends CI_Model {
       (object)array("viaing"=>"CONSULTA EXTERNA"),
       (object)array("viaing"=>"URGENCIAS"),
       (object)array("viaing"=>"REMITIDO"),
-      (object)array("viaing"=>"QUIRÓFANO"),
-      (object)array("viaing"=>"INTERNACIÓN")
+      (object)array("viaing"=>"QUIRÃ“FANO"),
+      (object)array("viaing"=>"INTERNACIÃ“N")
     );
     $this->arr_clastriage = array(
       (object)array("tipo"=>"1"),
@@ -153,13 +153,12 @@ class Historia extends CI_Model {
       (object)array("tipo"=>"IMAGENES DIAGNOSTICAS"),
       (object)array("tipo"=>"LABORATORIOS"),
       (object)array("tipo"=>"PROCEDIMIENTOS"),
-      (object)array("tipo"=>"CIRUGÍAS")
+      (object)array("tipo"=>"CIRUGÃAS")
       );
-    //$this->arr_destinopac = $this->Constante->arr_servicios;
-    $this->arr_destinopac = array((object)array("destino"=>"DE ALTA"));
-    $this->arr_destinopac[]=(object)array("destino"=>"REMITIDOS");
+    $this->arr_destinopac = $this->Constante->arr_servicios;
+    $this->arr_destinopac[]=(object)array("destino"=>"DE ALTA");
+    $this->arr_destinopac[]=(object)array("destino"=>"REMITIDO");
     $this->arr_destinopac[]=(object)array("destino"=>"FALLECIMIENTO");
-    $this->arr_destinopac[]=(object)array("destino"=>"CONSULTA EXTERNA");
     
     $this->arr_viaadmon = array(
       (object)array("via"=>"CUTANEA"),
@@ -175,7 +174,7 @@ class Historia extends CI_Model {
     );
     
     $this->arr_udosis = array(
-      (object)array("udos"=>"CENTÍMETROS CÚBICOS"),
+      (object)array("udos"=>"CENTÃMETROS CÃšBICOS"),
       (object)array("udos"=>"GRAMOS"),
       (object)array("udos"=>"LITROS"),
       (object)array("udos"=>"MICROGRAMOS"),
@@ -192,8 +191,395 @@ class Historia extends CI_Model {
     function obtener_ordenes($id){
     $this->db->from('ps_hist_ordenes_t67');
     $this->db->where('idhistoria_t67',$id);
+    $this->db->where('estado_f_t67 != "FACTURADO"');
     $result = $this->db->get();
     return $result->result();
+  }
+
+  function consulta_camas($camas){
+    $camas = (object)$this->input->post();
+    $this->db->from('ps_camas_t2000');
+    $this->db->where('servicios_cama',$camas->ubicacion);
+    $this->db->where('historia_t200 IS NULL');
+    return $this->db->get()->result();
+  }
+
+  function obtener_diagnostico($historia)
+  {
+    $this->db->where('idhistoria_t64',$historia);
+    return $this->db->get('ps_hist_consulta_t64')->result();
+  }
+    function convenio($codigo){
+    $this->db->where('codministerio_t70',$codigo);
+    return $this->db->get('ps_administradoras_t70')->result();
+  }
+    function consulta_opto($idhistoria){
+    $this->db->where('idhistoria', $idhistoria);
+    $this->db->where('idhistoria = idhistoria_t64');
+    $query = $this->db->get('ps_hist_consulta_t64,ps_hist_consulta_opto');
+    return $query->result();
+  }
+
+    function convenios($codigo)
+  {
+    $this->db->select('nit_t70');
+    $this->db->where('codministerio_t70',$codigo);
+    $result = $this->db->get('ps_administradoras_t70')->result();
+
+    if ($result != NULL) {
+        $reg = explode("-", $result[0]->nit_t70);
+        $this->db->where('tercero_t95',$reg[0]);
+        $query = $this->db->get('ps_convenios_t95'); 
+        return $query->result();
+      }
+  }
+    function tarifario_medicamentos($historia)
+  {
+        foreach ($historia as $fila) {
+          echo $fila->codigo_t67."MEDICAMENTOS";
+        $this->db->select("tarifa1_t73,codigoatc_t73");
+        $this->db->where('codigoatc_t73',$fila->codigo_t67);
+        $sql[] = $this->db->get('ps_cums_t73')->result();
+        }
+        return $sql;
+  }
+    function buscar_facturados($numfac)
+  {
+    $this->db->where('idfactura_t67', $numfac);
+    return $this->db->get('ps_hist_ordenes_t67')->result();
+  }
+
+    function confirmar_ordenes($conf,$numfac)
+  {
+    foreach ($conf->conf as $codigo) {
+      $reg = explode("T", $codigo);
+      $data = array('estado_f_t67' => 'FACTURADO','valor_t67' => $reg[1],'idfactura_t67' => $numfac);
+      $this->db->where('idhist_ordenes_t67',$reg[0])->update('ps_hist_ordenes_t67', $data);
+    }
+  }
+
+  public function consulta_ofta($idhistoria)
+  {
+    $this->db->from("ps_hist_consulta_t64,ps_hist_consulta_oftas");
+    $this->db->where("historia = idhistoria_t64");
+    $this->db->where('historia',$idhistoria);
+     $query = $this->db->get();
+    $arr_datos = $query->result();
+    if (count($arr_datos) > 0){
+      return $arr_datos;
+    }
+  }
+  function consulta_quirurgica($idhistoria){
+    $this->db->where('id_historia_qui', $idhistoria);
+    return $this->db->get('ps_des_quirurgica')->result();
+  }
+
+
+    function quirurgica($idhistoria,$dathistoria="")
+  {
+    $historia = $this->obtener($idhistoria);
+    $paciente = $this->Paciente->obtener($historia->identificacion_t3);
+    $consulta = $this->consulta_obtener($idhistoria);
+    $arr_consulta["usrmod_t64"]=$this->Modulo->usr->idusr;
+    $arr_consulta["fmod_t64"]=$this->Modulo->ahora();
+    
+    if(empty($dathistoria)){
+      $dathistoria=(object)$this->input->post();
+     
+    }
+    //$this->registar_procedimiento($dathistoria->orden["procs"],$idhistoria,$historia->identificacion_t3);
+    //exit();
+    $result = $this->modelo_universal->select("ps_hist_consulta_opto","*",array('idhistoria'=>$historia->idps_historia_t4));
+    $arr_quirurgico['cirujano_principal'] = $dathistoria->cirujano_principal;
+    $arr_quirurgico['cirujano_auxiliar'] = $dathistoria->cirujano_auxiliar; 
+    $arr_quirurgico['cirujano_auxiliar2'] = $dathistoria->cirujano_auxiliar2;
+    $arr_quirurgico['cirujano_auxiliar3'] = $dathistoria->cirujano_auxiliar3;
+    $arr_quirurgico['anesteciologo'] = $dathistoria->anesteciologo;
+    $arr_quirurgico['anesteciologo_auxiliar'] = $dathistoria->anesteciologo_auxiliar;
+    $arr_quirurgico['instrumentador'] = $dathistoria->instrumentador;
+    $arr_quirurgico['circulante'] = $dathistoria->circulante;
+    $arr_quirurgico['fecha_inicio'] = $dathistoria->fecha_inicio;
+    $arr_quirurgico['fecha_fin'] = $dathistoria->fecha_fin;
+    $arr_quirurgico['dxprincipal'] = $dathistoria->dxprincipal;
+    $arr_quirurgico['complicaciones'] = $dathistoria->complicaciones;
+    $arr_quirurgico['procedimientos_intraoperatorios'] = $dathistoria->procedimientos_intraoperatorios;
+    $arr_quirurgico['medicacion_en_block'] = $dathistoria->medicacion_en_block;
+    $arr_quirurgico['descripcion_quirurgica'] = $dathistoria->descripcion_quirurgica;
+    $arr_quirurgico['identificacion_paciente'] = $historia->identificacion_t3;
+    $arr_quirurgico['id_historia_qui'] = $idhistoria;
+    $arr_quirurgico['fmod_quirurgica'] = $this->Modulo->ahora();
+
+      if(!empty($result)){   
+        $this->db->where("id_historia_qui ",$historia->idps_historia_t4); 
+        $this->db->update('ps_des_quirurgica', $arr_quirurgico);
+        }else{
+           $this->db->insert('ps_des_quirurgica',$arr_quirurgico);
+
+            return 1;
+        }
+  }
+
+      function optometria($idhistoria,$dathistoria=""){
+    //echo $idhistoria;
+    $historia = $this->obtener($idhistoria);
+    // debug($historia);
+    //$paciente = $this->Paciente->obtener($historia->identificacion_t3);
+    //$consulta = $this->consulta_obtener($idhistoria);
+          if(empty($dathistoria)){
+            $dathistoria=(object)$this->input->post();
+          }
+
+         $arr_consulta["motconsulta_t64"] = $dathistoria->motivo["consulta"];
+         $arr_consulta["enfermactual_t64"] = $dathistoria->motivo["enfer_actual"];
+         $arr_consulta["dxprincipal_t64"] = $dathistoria->dx['dxprincipal'];
+         $arr_consulta["dxprincipalcod_t64"] = $dathistoria->dx['dxprincipalcod'];
+         $arr_consulta['dxrelprincipal_t64'] = $dathistoria->dx['dxrelprincipal'];
+        $arr_consulta['dxrelprincipalcod_t64'] = $dathistoria->dx['dxrelprincipalcod'];
+        $arr_consulta['causaext_t64'] = $dathistoria->dx['causaext'];
+        $arr_consulta['viaing_t64'] = $dathistoria->dx['viaing'];
+        $arr_consulta['finalconsu_t64'] = $dathistoria->dx['finalconsu'];
+        $arr_consulta['finalproc_t64'] = $dathistoria->dx['finalproc'];
+        $arr_consulta["usrmod_t64"]=$this->Modulo->usr->idusr;
+        $arr_consulta["fmod_t64"]=$this->Modulo->ahora();
+        $arr_consulta['idpaciente_t64']=$historia->identificacion_t3;
+        $arr_consulta['idhistoria_t64']=$historia->idps_historia_t4;
+        //InformaciÃ³n de ps_hist_consulta_t64
+        $result= $this->modelo_universal->select("ps_hist_consulta_t64","*",array('idhistoria_t64'=>$historia->idps_historia_t4));
+        $arr_consulta['medreg_t64']=$this->Modulo->usr->personal->registromedico_t10;
+        $arr_consulta['medidentif_t64']=$this->Modulo->usr->identificacion_t0;
+        $arr_consulta['mednomcomp_t64']=$this->Modulo->usr->nombre_t0;
+        $arr_consulta['medcargo_t64']=$this->Modulo->usr->personal->cargo_t10;
+        $arr_consulta['medespec_t64']=$this->Modulo->usr->personal->especialidades[0]->especialidades_t9;
+
+        if(!empty($result)){   
+        $this->db->where("idhistoria_t64 ",$historia->idps_historia_t4); 
+        $this->db->update('ps_hist_consulta_t64', $arr_consulta);
+        }else{
+           $this->db->insert('ps_hist_consulta_t64', $arr_consulta); 
+            return 1;
+        }
+        $resulta = $this->modelo_universal->select("ps_hist_consulta_opto","*",array('idhistoria'=>$historia->idps_historia_t4));
+        // Motivo de consulta
+        $array["idhistoria"] = $historia->idps_historia_t4;
+        $array["lensometria_ojo_derecho"] = $dathistoria->lensometria_ojo_derecho;
+        $array["lensometria_ojo_izquierdo"] =$dathistoria->lensometria_ojo_izquierdo;
+        // Revision por sistema
+        $array['tipo_lente_derecho'] =  $dathistoria->tipo_lente_derecho;
+        $array['tipo_lente_izquierdo'] = $dathistoria->tipo_lente_izquierdo;
+        $array['fondo_ojo_derecho'] =  $dathistoria->fondo_ojo_derecho;
+        $array['catarata_ojo_derecho'] =  $dathistoria->catarata_ojo_derecho;
+        $array['opacidad_ojo_derecho'] =  $dathistoria->opacidad_ojo_derecho;
+        $array['excavacion_ojo_derecho'] =  $dathistoria->excavacion_ojo_derecho;
+        $array['conjuntivitis_aguda_ojo_derecho'] =  $dathistoria->conjuntivitis_aguda_ojo_derecho;
+        $array['conjuntivitis_cronica_ojo_derecho'] =  $dathistoria->conjuntivitis_cronica_ojo_derecho;
+        $array['Blefaroconjuntivitis_ojo_derecho'] =  $dathistoria->Blefaroconjuntivitis_ojo_derecho;
+        $array['pterigio_nasal_ojo_derecho'] =  $dathistoria->pterigio_nasal_ojo_derecho;
+        $array['pterigio_temporal_ojo_derecho'] =  $dathistoria->pterigio_temporal_ojo_derecho;
+        $array['leucoma_ojo_derecho'] =  $dathistoria->leucoma_ojo_derecho;
+        $array['anisocoria_ojo_derecho'] =  $dathistoria->anisocoria_ojo_derecho;
+        $array['catarata_incipiente_ojo_derecho'] =  $dathistoria->catarata_incipiente_ojo_derecho;
+        $array['catarata_madura_ojo_derecho'] =  $dathistoria->catarata_madura_ojo_derecho;
+        $array['queratitis_ojo_derecho'] =  $dathistoria->queratitis_ojo_derecho;
+        $array['pinguecula_ojo_derecho'] =  $dathistoria->pinguecula_ojo_derecho;
+        $array['intraocular_ojo_derecho'] =  $dathistoria->intraocular_ojo_derecho;
+        $array['texto_ojo_derecho'] =  $dathistoria->texto_ojo_derecho;
+        // Ojo Izquierdo 
+        $array['fondo_ojo_izquierdo'] =  $dathistoria->fondo_ojo_izquierdo;
+        $array['catarata_ojo_izquierdo'] =  $dathistoria->catarata_ojo_izquierdo;
+        $array['opacidad_ojo_izquierdo'] =  $dathistoria->opacidad_ojo_izquierdo;
+        $array['excavacion_ojo_izquierdo'] =  $dathistoria->excavacion_ojo_izquierdo;
+        $array['conjuntivitis_aguda_ojo_izquierdo'] =  $dathistoria->conjuntivitis_aguda_ojo_izquierdo;
+        $array['conjuntivitis_cronica_ojo_izquierdo'] =  $dathistoria->conjuntivitis_cronica_ojo_izquierdo;
+        $array['Blefaroconjuntivitis_ojo_izquierdo'] =  $dathistoria->Blefaroconjuntivitis_ojo_izquierdo;
+        $array['pterigio_nasal_ojo_izquierdo'] =  $dathistoria->pterigio_nasal_ojo_izquierdo;
+        $array['pterigio_temporal_ojo_izquierdo'] =  $dathistoria->pterigio_temporal_ojo_izquierdo;
+        $array['leucoma_ojo_izquierdo'] =  $dathistoria->leucoma_ojo_izquierdo;
+        $array['anisocoria_ojo_izquierdo'] =  $dathistoria->anisocoria_ojo_izquierdo;
+        $array['catarata_incipiente_ojo_izquierdo'] =  $dathistoria->catarata_incipiente_ojo_izquierdo;
+        $array['catarata_madura_ojo_izquierdo'] =  $dathistoria->catarata_madura_ojo_izquierdo;
+        $array['queratitis_ojo_izquierdo'] =  $dathistoria->queratitis_ojo_izquierdo;
+        $array['pinguecula_ojo_izquierdo'] =  $dathistoria->pinguecula_ojo_izquierdo;
+        $array['intraocular_ojo_izquierdo'] =  $dathistoria->intraocular_ojo_izquierdo;
+        $array['texto_ojo_izquierdo'] =  $dathistoria->texto_ojo_izquierdo;
+        // Vision Cromatica
+        $array['vision_deuteranomalia'] = $dathistoria->vision_deuteranomalia;
+        $array['vision_estrabismo'] = $dathistoria->vision_estrabismo;
+        $array['vision_seg_70'] = $dathistoria->vision_seg_70;
+        $array['vision_seg_100'] = $dathistoria->vision_seg_100;
+        $array['vision_seg_200'] = $dathistoria->vision_seg_200;
+        $array['vision_seg_400'] = $dathistoria->vision_seg_400;
+        $array['vision_descripcion_derecha'] = $dathistoria->vision_descripcion_derecha;
+        // Ojo izquierdo
+        $array['vision_deuteranomaliaizquierdo'] = $dathistoria->vision_deuteranomaliaizquierdo;
+        $array['vision_estrabismoizquierdo'] = $dathistoria->vision_estrabismoizquierdo;
+        $array['vision_seg_70izquierdo'] = $dathistoria->vision_seg_70izquierdo;
+        $array['vision_seg_100izquierdo'] = $dathistoria->vision_seg_100izquierdo;
+        $array['vision_seg_200izquierdo'] = $dathistoria->vision_seg_200izquierdo;
+        $array['vision_seg_400izquierdo'] = $dathistoria->vision_seg_400izquierdo;
+        $array['vision_descripcion_derechaizquierdo'] = $dathistoria->vision_descripcion_izquierdo;
+
+        // Identificacion de la enfermedad
+        $array['sano'] = $dathistoria->revision['sano'];
+        $array['enfermedad'] = $dathistoria->revision['enfermedad'];
+        $array['enfermedad_profesional'] = $dathistoria->revision['enfermedad_profesional'];
+        $array['accidente'] = $dathistoria->revision['accidente'];
+        $array['identificacion_enfermedad'] = $dathistoria->identificacion_enfermedad;
+        $array['estudios'] = $dathistoria->estudios;
+        $array['analisis'] = $dathistoria->analisis['laboratorios'];
+        $array['conducta'] = $dathistoria->analisis['conducta'];
+        $array['planmanejo'] = $dathistoria->analisis['planmanejo'];
+        $array['ojo_derecho'] = $dathistoria->revision['ojo_derecho'];
+        $array['ojo_izquierdo'] = $dathistoria->revision['ojo_izquierdo'];
+        $array['ojo_tipo_lente'] = $dathistoria->revision['ojo_tipo_lente'];
+        $array['dnp_derecho'] = $dathistoria->revision['dnp_derecho'];
+        $array['dnp_izquierdo'] = $dathistoria->revision['dnp_izquierdo'];
+        if(!empty($resulta)){   
+        $this->db->where("idhistoria",$historia->idps_historia_t4); 
+        $this->db->update('ps_hist_consulta_opto', $array);
+        }else{
+           $this->db->insert('ps_hist_consulta_opto', $array); 
+            return 1;
+        }
+        
+
+
+  }
+
+  function oftalmologia($idhistoria,$dathistoria=""){
+    //echo $idhistoria;
+    $historia = $this->obtener($idhistoria);
+     //debug($historia);
+    //$paciente = $this->Paciente->obtener($historia->identificacion_t3);
+    //$consulta = $this->consulta_obtener($idhistoria);
+    $arr_consulta["usrmod_t64"]=$this->Modulo->usr->idusr;
+    $arr_consulta["fmod_t64"]=$this->Modulo->ahora();
+    $arr_consulta['idpaciente_t64']=$historia->identificacion_t3;
+    $arr_consulta['idhistoria_t64']=$historia->idps_historia_t4;
+
+    if(empty($dathistoria)){
+      $dathistoria=(object)$this->input->post();
+    }
+    $resulta = $this->modelo_universal->select("ps_hist_consulta_t64","*",array('idhistoria_t64'=>$historia->idps_historia_t4));
+    //var_dump($dathistoria->dx['documento']);
+
+      $arrt64['idhistoria_t64']=$historia->idps_historia_t4;
+      $arrt64["motconsulta_t64"] = $dathistoria->motivo["consulta"];
+      $arrt64["enfermactual_t64"] =$dathistoria->motivo["enfer_actual"];
+
+      $arrt64["dxprincipal_t64"]=$dathistoria->dx["dxprincipal"];
+      $arrt64["dxprincipalcod_t64"]=$dathistoria->dx["dxprincipalcod"];           
+
+
+      $arrt64["dxsecundario_t64"]=$dathistoria->dx["dxsecundario"] ;
+      $arrt64["dxsecundariocod_t64"]=$dathistoria->dx["dxsecundariocod"] ;
+
+      $arrt64["dxcuarto_t64"]=$dathistoria->dx["dxcuarto"]; 
+
+      $arrt64["dxrelsecundario_t64"]=$dathistoria->dx["dxrelsecundario"]; 
+      $arrt64["dxrelsecundariocod_t64"]=$dathistoria->dx["dxrelsecundariocod"] ;
+
+      $arrt64["dxrelprincipal_t64"]=$dathistoria->dx["dxrelprincipal"] ;
+      $arrt64["dxrelprincipalcod_t64"]=$dathistoria->dx["dxrelprincipalcod"] ;
+
+      $arrt64["tipooption_t64"]=$dathistoria->dx["ojo_comprometido"] ;
+      $arrt64["tipooption_t64"]=$dathistoria->dx["ojo_comprometido2"] ;
+      $arrt64['causaext_t64'] = $dathistoria->dx['causaext'];
+      $arrt64['idpaciente_t64'] = $dathistoria->dx['documento'];
+
+      if(!empty($resulta)){   
+        $this->db->where("idhistoria_t64",$historia->idps_historia_t4); 
+        $this->db->update('ps_hist_consulta_t64', $arrt64);
+        }else{
+           $this->db->insert('ps_hist_consulta_t64', $arrt64);
+            return 1;
+        } 
+
+        $result= $this->modelo_universal->select("ps_hist_consulta_oftas","*",array('historia'=>$historia->idps_historia_t4));
+        $array['historia'] = $historia->idps_historia_t4;;
+        // Motivo de consulta
+        $array["m_consulta_ofta"] = $dathistoria->motivo["consulta"];
+        $array["m_enfer_actual_ofta"] =$dathistoria->motivo["enfer_actual"];
+        // Revision por sistema
+        $array['agudeza_sin_correccion'] =  $dathistoria->revision['agudeza_sin_correccion'];
+        $array['agudeza_texto_sin_correccion'] = $dathistoria->revision['agudeza_texto_sin_correccion'];
+        $array['agudeza_con_correccion'] =  $dathistoria->revision['agudeza_con_correccion'];
+        $array['agudeza_texto_con_correccion'] = $dathistoria->revision['agudeza_texto_con_correccion'];
+        $array['agudeza_vp_sin_correccion'] = $dathistoria->revision['agudeza_vp_sin_correccion'];
+        $array['agudeza__texto_vp_sin_correccion'] = $dathistoria->revision['agudeza__texto_vp_sin_correccion'];
+        $array['agudeza_vp_con_correccion'] = $dathistoria->revision['agudeza_vp_con_correccion'];
+        $array['agudeza__texto_vp_con_correccion'] = $dathistoria->revision['agudeza__texto_vp_con_correccion'];
+
+        //
+
+        $array['cover_prisma_con_correccion'] =  $dathistoria->revision['cover_prisma_con_correccion'];
+        $array['cover_prisma_vl_ojo_derecho'] = $dathistoria->revision['cover_prisma_vl_ojo_derecho'];
+        $array['cover_prisma_vl_ojo_izquierdo'] = $dathistoria->revision['cover_prisma_vl_ojo_izquierdo'];
+        $array['cover_krismky_vl_ojo_derecho'] = $dathistoria->revision['cover_krismky_vl_ojo_derecho'];
+        $array['cover_krismky_vl_ojo_izquierdo'] = $dathistoria->revision['cover_krismky_vl_ojo_izquierdo'];
+        $array['cover_add_vl_ojo_derecho'] = $dathistoria->revision['cover_add_vl_ojo_derecho'];
+        $array['cover_add_vl_ojo_izquierdo'] = $dathistoria->revision['cover_add_vl_ojo_izquierdo'];
+        $array['sc_prisma_con_correccion'] =  $dathistoria->revision['sc_prisma_con_correccion'];
+        $array['sc_prisma_vl_ojo_derecho'] = $dathistoria->revision['sc_prisma_vl_ojo_derecho'];
+        $array['sc_prisma_vl_ojo_izquierdo'] = $dathistoria->revision['sc_prisma_vl_ojo_izquierdo'];
+        $array['sc_krismky_vl_ojo_derecho'] = $dathistoria->revision['sc_krismky_vl_ojo_derecho'];
+        $array['sc_krismky_vl_ojo_izquierdo'] = $dathistoria->revision['sc_krismky_vl_ojo_izquierdo'];
+        $array['sc_add_vl_ojo_derecho'] = $dathistoria->revision['sc_add_vl_ojo_derecho'];
+        $array['sc_add_vl_ojo_izquierdo'] = $dathistoria->revision['sc_add_vl_ojo_izquierdo'];
+        $array['refraccion_lensometria_derecho'] = $dathistoria->revision['refraccion_lensometria_derecho'];
+        $array['refraccion_lensometria_izquierdo'] = $dathistoria->revision['refraccion_lensometria_izquierdo'];
+        $array['refraccion_rx_derecho'] = $dathistoria->revision['refraccion_rx_derecho'];
+        $array['refraccion_rx_izquierdo'] = $dathistoria->revision['refraccion_rx_izquierdo'];
+        $array['refraccion_ciclopegia_derecho'] = $dathistoria->revision['refraccion_ciclopegia_derecho'];
+        $array['refraccion_ciclopegia_izquierdo'] = $dathistoria->revision['refraccion_ciclopegia_izquierdo'];
+        $array['examen_queratometria_derecho'] = $dathistoria->revision['examen_queratometria_derecho'];
+        $array['examen_queratometria_izquierdo'] = $dathistoria->revision['examen_queratometria_izquierdo'];
+        $array['examen_orbita_derecho'] = $dathistoria->revision['examen_orbita_derecho'];
+        $array['examen_orbita_izquierdo'] = $dathistoria->revision['examen_orbita_izquierdo'];
+        $array['examen_lagrimal_derecho'] = $dathistoria->revision['examen_lagrimal_derecho'];
+        $array['examen_lagrimal_izquierdo'] = $dathistoria->revision['examen_lagrimal_izquierdo'];
+        $array['examen_biomicroscopia_derecho'] = $dathistoria->revision['examen_biomicroscopia_derecho'];
+        $array['examen_biomicroscopia_izquierdo'] = $dathistoria->revision['examen_biomicroscopia_izquierdo'];
+        $array['examen_cristalino_derecho'] = $dathistoria->revision['examen_cristalino_derecho'];
+        $array['examen_cristalino_izquierdo'] = $dathistoria->revision['examen_cristalino_izquierdo'];
+        $array['examen_gonio_derecho'] = $dathistoria->revision['examen_gonio_derecho'];
+        $array['examen_gonio_izquierdo'] = $dathistoria->revision['examen_gonio_izquierdo'];
+        $array['examen_pio_derecho'] = $dathistoria->revision['examen_pio_derecho'];
+        $array['examen_pio_izquierdo'] = $dathistoria->revision['examen_pio_izquierdo'];
+        $array['examen_fondo_dilatado'] = $dathistoria->revision['examen_fondo_dilatado'];
+        $array['examen_no_fondo_dilatado'] = $dathistoria->revision['examen_no_fondo_dilatado'];
+        $array['examen_fondo_derecho'] = $dathistoria->revision['examen_fondo_derecho'];
+        $array['examen_fondo_izquierdo'] = $dathistoria->revision['examen_fondo_izquierdo'];
+
+        //diagnostico
+        $array["dx_dxprincipal_ofta"]=$dathistoria->dx["dxprincipal"];
+        $array["dx_dxprincipalcod_ofta"]=$dathistoria->dx["dxprincipalcod"]; 
+        $array["dx_tipodx_ofta"]=$dathistoria->dx["tipodx"] ;
+                   
+        $array["dx_dxtercerocod_ofta"]=$dathistoria->dx["dxtercero"] ;
+        $array["dx_dxsecundario_ofta"]=$dathistoria->dx["dxsecundario"] ;
+        $array["dx_dxsecundariocod_ofta"]=$dathistoria->dx["dxsecundariocod"] ;
+        $array["dx_tipodiag2_ofta"]=$dathistoria->dx["tipodiag2"]; 
+        $array["dx_dxcuarto_ofta"]=$dathistoria->dx["dxcuarto"]; 
+        $array["dx_dxrelsecundario_ofta"]=$dathistoria->dx["dxrelsecundario"]; 
+        $array["dx_dxrelsecundariocod_ofta"]=$dathistoria->dx["dxrelsecundariocod"] ;
+        $array["dx_dxrelprincipal_ofta"]=$dathistoria->dx["dxrelprincipal"] ;
+        $array["dx_dxrelprincipalcod_ofta"]=$dathistoria->dx["dxrelprincipalcod"] ;
+        $array["dxojocomprometido2"]=$dathistoria->dx["ojo_comprometido"] ;
+        $array["dxojocomprometido"]=$dathistoria->dx["ojo_comprometido2"] ;
+        $array['causaext'] = $dathistoria->dx['causaext'];
+        $array['dx_viaing_ofta'] = $dathistoria->dx['dx_viaing_ofta'];
+        //var_dump($array);
+
+        if(!empty($result)){   
+        $this->db->where("historia",$historia->idps_historia_t4); 
+        $this->db->update('ps_hist_consulta_oftas', $array);
+        }else{
+           $this->db->insert('ps_hist_consulta_oftas', $array); 
+            return 1;
+        }
+        
+
+
   }
 
   function tarifario($historia)
@@ -220,13 +606,6 @@ class Historia extends CI_Model {
       $historia = $query->row();
     }
     return $historia;
-  }
-
-  function ginecoAntes($idpaciente){
-    $this->db->where('id_paciente_gineco',$idpaciente);
-    $this->db->order_by('id_gineco', 'desc');
-    $this->db->limit(1);
-    return $this->db->get('ps_hist_consulta_gineco')->result();
   }
   
   function ordenespend($buscado){
@@ -264,56 +643,7 @@ function listar($buscado){
       }
     }
     return false;
-  } 
-  function buscar_facturados($numfac)
-  {
-    $this->db->where('idfactura_t67', $numfac);
-    return $this->db->get('ps_hist_ordenes_t67')->result();
-  }
-
-
-
-    function obtener_diagnostico($historia)
-  {
-    $this->db->where('idhistoria_t64',$historia);
-    return $this->db->get('ps_hist_consulta_t64')->result();
-  }
-    function tarifario_medicamentos($historia)
-  {
-        foreach ($historia as $fila) {
-        $this->db->select("tarifa1_t73,codigoatc_t73");
-        $this->db->where('codigoatc_t73',$fila->codigo_t67);
-        $sql[] = $this->db->get('ps_cums_t73')->result();
-        }
-        return $sql;
-  }
-    function confirmar_ordenes($conf,$numfac)
-  {
-    foreach ($conf->conf as $codigo) {
-      $reg = explode("T", $codigo);
-      $data = array('estado_f_t67' => 'FACTURADO','valor_t67' => $reg[1],'idfactura_t67' => $numfac);
-      $this->db->where('idhist_ordenes_t67',$reg[0])->update('ps_hist_ordenes_t67', $data);
-    }
-  }
-
-  function convenio($codigo){
-    $this->db->where('codministerio_t70',$codigo);
-    return $this->db->get('ps_administradoras_t70')->result();
-  }
-
-    function convenios($codigo)
-  {
-    $this->db->select('nit_t70');
-    $this->db->where('codministerio_t70',$codigo);
-    $result = $this->db->get('ps_administradoras_t70')->result();
-
-    if ($result != NULL) {
-        $reg = explode("-", $result[0]->nit_t70);
-        $this->db->where('tercero_t95',$reg[0]);
-        $query = $this->db->get('ps_convenios_t95'); 
-        return $query->result();
-      }
-  }
+  }  
   
   function regevento($evento,$historia=""){
     if(empty($historia)){
@@ -395,6 +725,7 @@ function listar($buscado){
       $this->db->where("idps_historia_t4",$id);
       $this->db->update("ps_historia_t4",$arr_nuevo);
     }
+    $this->db->where('servicios_cama',$dathistoria->ubicacion)->where('identificador_cama',$this->input->post('numero_cama'))->update('ps_camas_t2000',array('historia_t200' => $id));
     return $id;
   }
   
@@ -420,6 +751,7 @@ function listar($buscado){
     $arr_consulta['idhistoria_t64']=$historia->idps_historia_t4;
     switch($dathistoria->formularioenviado){
       case "triage":
+      var_dump($dathistoria);
         $arr_consulta['triage_t64']=$dathistoria->triage;
         $arr_dathistoria['triage_t4']=$dathistoria->triage;
         $arr_dathistoria["estado_t4"]='ATENCION MEDICA';
@@ -582,6 +914,35 @@ function listar($buscado){
             
           
         }
+      case 'evolucion_psicologica':
+        $arr_evolucion = $this->input->post();
+        $arr_evoluciones['id_historia'] = $idhistoria;
+        $arr_evoluciones['precuocupacion_somatica'] = $arr_evolucion['precuocupacion_somatica'];
+        $arr_evoluciones['hostilidad'] = $arr_evolucion['hostilidad'];
+        $arr_evoluciones['ansiedad_psiquica'] = $arr_evolucion['ansiedad_psiquica'];
+        $arr_evoluciones['barreras_emocionales'] = $arr_evolucion['barreras_emocionales'];
+        $arr_evoluciones['desorganizacion_conceptual'] = $arr_evolucion['desorganizacion_conceptual'];
+        $arr_evoluciones['autodepresivo'] = $arr_evolucion['autodepresivo'];
+        $arr_evoluciones['ansiedad_somatica'] = $arr_evolucion['ansiedad_somatica'];
+        $arr_evoluciones['alteraciones_moto_espe'] = $arr_evolucion['alteraciones_moto_espe'];
+        $arr_evoluciones['autoestima_exa'] = $arr_evolucion['autoestima_exa'];
+        $arr_evoluciones['humor_depre'] = $arr_evolucion['humor_depre'];
+        $arr_evoluciones['suspicacia'] = $arr_evolucion['suspicacia'];
+        $arr_evoluciones['alucinaciones'] = $arr_evolucion['alucinaciones'];
+        $arr_evoluciones['enlentesimiento_motor'] = $arr_evolucion['enlentesimiento_motor'];
+        $arr_evoluciones['falta_coperacion'] = $arr_evolucion['falta_coperacion'];
+        $arr_evoluciones['transtorno_pensamiento'] = $arr_evolucion['transtorno_pensamiento'];
+        $arr_evoluciones['embotamiento'] = $arr_evolucion['embotamiento'];
+        $arr_evoluciones['agitacion_psicomotriz'] = $arr_evolucion['agitacion_psicomotriz'];
+        $arr_evoluciones['desorientacion'] = $arr_evolucion['desorientacion'];
+        $arr_evoluciones['gravedad'] = $arr_evolucion['gravedad'];
+        $arr_evoluciones['mejoria'] = $arr_evolucion['mejoria'];
+        $arr_evoluciones['observacion_evol'] = $arr_evolucion['obs'];
+        $arr_evoluciones["fmod_psicologia"] = $this->Modulo->usr->idusr;
+        $arr_evoluciones["usrmod_psicologia"]=$this->Modulo->ahora();
+        $this->db->insert('ps_hist_evolucion_psicologia', $arr_evoluciones);
+        return true;
+        break;
       case "examingreso":
         if(is_null($dathistoria->estadoingreso)===false)$arr_consulta['estadoingreso_t64']=$dathistoria->estadoingreso;
         if(is_null($dathistoria->motconsulta)===false)$arr_consulta['motconsulta_t64']=$dathistoria->motconsulta;
@@ -671,8 +1032,6 @@ function listar($buscado){
           IF(!empty($dathistoria->discapacidad)){
             $arr_datpac["discap_t3"]=$dathistoria->discapacidad;
           }
-          $arr_datpac["grupoetnic_t3"]=$dathistoria->grupoetcod;
-          $arr_datpac["rh_t3"]=$dathistoria->rh;
           $arr_datpac["usrmod_t3"]=$this->Modulo->usr->idusr;
           $arr_datpac["fmod_t3"]=$this->Modulo->ahora();
           $this->db->where("identificacion_t3",$historia->identificacion_t3);
@@ -834,16 +1193,16 @@ function listar($buscado){
         unset($arr_evolhist);
         $idevol = $this->Modulo->insertid();
         switch($dathistoria->tipoevolucion){
-          case "ENFERMERÍA":
+          case "ENFERMERÃA":
             $arr_concepevol = $dathistoria->evolenf["concep"];
             break;
-          case "EVOLUCIÓN MÉDICA":
+          case "EVOLUCIÃ“N MÃ‰DICA":
             $arr_concepevol = $dathistoria->evolmed["concep"];
             break;
           case "TERAPIA RESPIRATORIA":
             $arr_concepevol = $dathistoria->evolterresp["concep"];
             break;
-          case "TERAPIA FÍSICA":
+          case "TERAPIA FÃSICA":
             $arr_concepevol = $dathistoria->evolterfis["concep"];
             break;
         }
@@ -1301,7 +1660,8 @@ function listar($buscado){
     $arr_consulta['mednomcomp_t64']=$this->Modulo->usr->nombre_t0;
     $arr_consulta['medcargo_t64']=$this->Modulo->usr->personal->cargo_t10;
     $arr_consulta['medespec_t64']=$this->Modulo->usr->personal->especialidades[0]->especialidades_t9;
-    
+    var_dump($arr_consulta);
+    exit();
     if(is_null($consulta->idhist_consulta_t64)){
       $this->db->insert("ps_hist_consulta_t64",$arr_consulta);
       $idconsulta = $this->db->insert_id();
@@ -1329,11 +1689,7 @@ function listar($buscado){
   
   function odontologia($idhistoria,$dathistoria="",$evento){
     
-        if ($this->uri->segment(5) == "evol_med") {
-      $idhistoria = $this->uri->segment(6);
-    }else{
-      $idhistoria = $this->uri->segment(5);
-    }
+
     $historia = $this->obtener($idhistoria);
     // debug($historia);
     //$paciente = $this->Paciente->obtener($historia->identificacion_t3);
@@ -1542,13 +1898,13 @@ function listar($buscado){
         }
         switch($reg->categoria_t111){
           case "articulacion":
-            $catdesc = "ARTICULACIÓN";
+            $catdesc = "ARTICULACIÃ“N";
             break;
           case "movimientos":
             $catdesc = "MOVIMIENTOS";
             break;
           case "mediosfisicos":
-            $catdesc = "MEDIOS FÍSICOS";
+            $catdesc = "MEDIOS FÃSICOS";
             break;
           case "fortalecimiento":
             $catdesc = "FORTALECIMIENTO";
@@ -1563,7 +1919,7 @@ function listar($buscado){
             $catdesc = "ACTIVIDADES CARDIO VACULARES";
             break;
           case "bandaselasticas":
-            $catdesc = "BANDAS ELÁSTICAS";
+            $catdesc = "BANDAS ELÃSTICAS";
             break;
           case "tiempo":
             $catdesc = "TIEMPO";
@@ -1680,7 +2036,7 @@ function listar($buscado){
     //var_dump($infosalida); exit;
     switch($infosalida->destino){
       case "DE ALTA":
-      case "AYUDAS DIAGNÓSTICAS":
+      case "AYUDAS DIAGNÃ“STICAS":
       case "CONSULTA EXTERNA":
       case "LABORATORIO":
         $cierre = true;
@@ -1720,6 +2076,8 @@ function listar($buscado){
       $arr_datcons["fmod_t64"]=$this->Modulo->ahora();
       $this->db->where("idhist_consulta_t64",$consulta->idhist_consulta_t64);
       $this->db->update("ps_hist_consulta_t64",$arr_datcons);
+      $data = array('historia_t200' => NULL);
+      $this->db->where('historia_t200 = '.$historia->idps_historia_t4)->update('ps_camas_t2000',$data);
     }else{
       $arr_dathist["ubicacion_t4"]=$infosalida->destino;
       $arr_dathist["usrmod_t4"]=$this->Modulo->usr->idusr;
